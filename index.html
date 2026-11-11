@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard - Toch Omot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>🌤️ Weather Dashboard</h1>
+    <p class="sub">Ruiru, Kenya | IYF Week 6 - Async JavaScript</p>
+
+    <form id="search-form">
+      <input id="city-input" type="text" placeholder="Enter city e.g. Nairobi, London, Ruiru" autocomplete="off">
+      <button type="submit" id="search-btn">Search</button>
+    </form>
+
+    <div id="history"></div>
+
+    <p id="status"></p>
+
+    <section id="weather-card" class="hidden">
+      <h2 id="city-name"></h2>
+      <img id="weather-icon" alt="Weather icon">
+      <p id="temp"></p>
+      <p id="description"></p>
+      <div class="details">
+        <p>Feels Like: <span id="feels-like"></span></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <p>Wind: <span id="wind"></span></p>
+        <p>Pressure: <span id="pressure"></span></p>
+      </div>
+    </section>
+  </main>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
