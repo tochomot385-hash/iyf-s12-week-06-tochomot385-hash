@@ -1,4 +1,4 @@
-const API_KEY = "PASTE_YOUR_KEY_HERE";
+const API_KEY = "364d9cd9de65781a4ea48d36fe83d8dd";
 
 const searchBtn = document.querySelector("button");
 const cityInput = document.querySelector("input");
