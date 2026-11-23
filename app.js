@@ -38,7 +38,3 @@ form.addEventListener("submit", (e) => {
   const city = document.getElementById("city-input").value;
   if (city) getWeather(city);
 });
-searchBtn.addEventListener("click", () => {
-  const city = cityInput.value;
-  if (city) getWeather(city);
-});
