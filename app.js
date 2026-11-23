@@ -30,6 +30,14 @@ async function getWeather(city) {
   }
 }
 
+// Find the FORM, not the button
+const form = document.getElementById("search-form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); // <- STOPS the page reload
+  const city = document.getElementById("city-input").value;
+  if (city) getWeather(city);
+});
 searchBtn.addEventListener("click", () => {
   const city = cityInput.value;
   if (city) getWeather(city);
